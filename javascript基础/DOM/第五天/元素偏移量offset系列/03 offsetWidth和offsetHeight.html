@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>offsetWidth offsetHeight</title>
+    <style>
+        .w {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin: 0 auto 200px;
+            padding: 10px;
+            border: 15px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w"></div>
+    <script>
+        // offsetWidth  offsetHeight
+        // 返回的数值是包含width padding border
+        var w = document.querySelector('.w');
+        console.log(w.offsetWidth);
+        console.log(w.offsetHeight);
+
+        // offsetParent
+        // 返回带有定位的父亲，如果没有则返回body
+    </script>
+</body>
+
+</html>

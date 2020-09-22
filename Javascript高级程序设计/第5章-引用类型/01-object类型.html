@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.创建object的两种方式，new和对象字面量
+        var person = new Object();
+        person.name = 'andy';
+        person.age = 18;
+
+        var person1 = {
+                name: 'red',
+                // 在对象字面量中，通过逗号来分隔不同的属性
+                age: 60
+            }
+            // 访问对象属性或方法
+        console.log(person.name);
+        console.log(person1["name"]);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #myDiv {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myDiv">
+
+    </div>
+    <script>
+        var myDiv = document.getElementById('myDiv')
+            // 这个style对象是CSSStyleDeclaration的实例，包含着通过HTML的style特性指定的所有样式信息
+            // 但不包含外部样式表或嵌入样式表经层叠而来的样式
+        myDiv.style.backgroundColor = 'red';
+        myDiv.style.width = '200px'
+        myDiv.style.height = '200px'
+        myDiv.style.border = '5px solid #000';
+
+        // DOM样式属性和方法
+        console.log(myDiv.style.cssText); // 获得当前DOM节点的CSS代码
+        for (var i = 0; i < myDiv.style.length; i++) {
+            console.log(myDiv.style.item[i])
+        }
+        // 获得对应属性的属性值
+        console.log(myDiv.style.getPropertyValue('width'))
+            // 移除某个CSS属性
+        myDiv.style.removeProperty('border')
+    </script>
+</body>
+
+</html>

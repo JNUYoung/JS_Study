@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位水平垂直居中</title>
+    <style>
+        .box {
+            position: absolute;
+            /*1.left走父容器宽度的一半*/
+            left: 50%;
+            /*2.margin 负值 往左边走盒子的一半距离*/
+            margin-left: -100px;
+            /*3.top走父容器高度的一半*/
+            top: 50%;
+            /*4.margin 负值 往上走盒子高度一半的距离*/
+            margin-top: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: #ffb798;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin负值的应用</title>
+    <style>
+
+        ul li {
+            /*如果都有定位*/
+            position: relative;
+            /*则设置z-index属性*/
+            list-style: none;
+            float: left;
+            width: 150px;
+            height: 200px;
+            border: 1px solid red;
+            /*让每个小盒子往左边走1px
+            刚好使得两条边框重合*/
+            margin-left: -1px;
+        }
+        ul li:hover {
+            /*如果没有定位，鼠标经过添加相对定位即可*/
+            /*使用相对定位提高层级*/
+            /*position:relative*/
+
+            /*如果都有定位，则用z-index提高层级*/
+            z-index: 1;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+</body>
+</html>

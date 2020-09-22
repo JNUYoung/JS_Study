@@ -1,0 +1,106 @@
+HTML5的新特性
+    *HTML5 中的一些有趣的新特性：
+    *用于绘画的 canvas 元素
+    *用于媒介回放的 video 和 audio 元素
+    *对本地离线存储的更好的支持
+    *新的特殊内容元素，比如 article、footer、header、nav、section
+    *新的表单控件，比如 calendar、date、time、email、url、search
+
+    HTML5的新增特性主要是针对以前的不足，增加了一些新的标签，新的表单和新的表单属性等
+    这些新特性都存在兼容性的问题，基本是IE9+以上版本的浏览器才能支持，如果不考虑兼容性问题，就可以大量使用这些新特性
+
+1.html5新增的语义化标签：
+    以前布局经常使用很多div盒子，但是对于搜索引擎来说,这是没有语义的。
+    html5新增的语义化标签：
+    <header>：头部标签
+    <nav>：导航标签
+    <article>：内容标签
+    <section>：定义文档某个区域
+    <aside>：侧边栏标签
+    <footer>：尾部标签
+    **注意：
+        1.这种语义化标准主要是针对搜索引擎的
+        2.这些新标签页面中可以使用多次
+        3.在IE9中，需要把这些元素转换为块级元素
+        4.移动端更喜欢用这些标签
+
+2.HTML5新增的多媒体标签
+    新增的多媒体标签主要包含两个：
+    谷歌浏览器把音频和视频的自动播放禁止了；
+    1.音频<audio>
+        当前<audio>元素支持三种音频格式，MP3,Wav，Ogg
+        <audio>常见属性：
+        1）autoplay：autoplay；--音频就绪后马上播放
+        2）controls：controls；--显示播放控件
+        3）loop：loop；--音频结束后循环播放
+        4）src：url；--音频url地址
+    2.视频<video>
+        当前<video>元素支持三种视频格式，MP4,WebM,Ogg，但是尽量使用MP4格式
+        <video>常见属性
+        1）autoplay：autoplay；--视频就绪自动播放（谷歌浏览器需要添加muted解决自动播放问题）
+        2）controls：controls；--向用户显示播放控件；（即开始暂停按钮，静音全屏按钮，进度条等播放器控件）
+        3）width：px--设置播放器宽度
+        4）height：px--设置播放器高度
+        5）loop：loop；--播放完是否继续播放该视频，循环播放；
+        6）preload：auto（预先加载）|none（不应加载）；--规定是否预加载视频（有autoplay则忽略该属性）
+        7）src：url；--视频url地址；
+        8）poster：imgurl；--加载等待的画面图片；
+        9）muted：muted；--静音播放；
+
+3.HTML5新增的input类型：
+        1.  type="email"
+        2.  type="url"
+        3.  type="date"
+        4.  type="time"
+        5.  type="month"
+        6.  type="week"
+        7.  type="number"
+        8.  type="tel"
+        9.  type="search"
+        10. type="color"
+
+4.HTML5新增的表单属性：
+        1.required：required；--表单拥有该属性表示其内容不能为空，必填
+        2.placeholder：提示文本；--表单的提示信息，存在默认值将不显示
+        3.autofocus：autofocus；--自动聚焦属性，页面加载完成后自动聚焦到指定表单
+        4.autocomplete：on | off；--当用户在字段开始键入时，浏览器基于之前键入的值，应该显示出在字段中填写的选项
+                                    （即显示输入的历史）
+                                    默认已经打开，如autocomplete：“on”；autocomplete=“off”
+                                    需要放在表单内，同时加上name属性，同时成功提交
+        5.multiple：multiple；--可以多选文件提交
+5.HTML5-embed标签
+
+6.HTML5-canvas画布
+        canvas元素用于在网页上绘制图形
+        HTML5的canvas元素使用js在网页上绘制图像，画布是一个矩形区域，可以控制每个像素
+
+7.HTML5-拖放（Drag和drop）
+
+8.HTML5内联SVG
+        SVG 指可伸缩矢量图形 (Scalable Vector Graphics)
+        SVG 用于定义用于网络的基于矢量的图形
+        SVG 使用 XML 格式定义图形
+        SVG 图像在放大或改变尺寸的情况下其图形质量不会有损失
+        SVG 是万维网联盟的标准
+
+        与其他图像格式相比（比如 JPEG 和 GIF），使用 SVG 的优势在于：
+        SVG 图像可通过文本编辑器来创建和修改
+        SVG 图像可被搜索、索引、脚本化或压缩
+        SVG 是可伸缩的
+        SVG 图像可在任何的分辨率下被高质量地打印
+        SVG 可在图像质量不下降的情况下被放大
+
+9.HTML5常用属性：
+    1）contengEditable:true | false
+        几乎可以为任何元素指定，用于将元素设置为可编辑模式
+    2）hidden
+        对元素进行隐藏。一般用来传值，或者当某个条件成立时，执行内容显示
+        默认值就是hidden
+    3）data-*
+        自定义属性，用于存储页面或应用程序的私有自定义数据
+    4）multiple
+        规定输入域中可选择多个内容，用于表单组件，如file，select等
+    5）required
+        要求表单在提交前必须输入内容
+    6）pattern
+        规定用于验证输入字段的模式，用于表单组件，

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动元素经常搭配标准流的父元素</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 100px;
+            background-color: #cccccc;
+            margin: 100px auto;
+        }
+        .one,.two,.three {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #ff6700;
+            margin-right: 60px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="one">第一个盒子</div>
+    <div class="two">第二个盒子</div>
+    <div class="three">第三个盒子</div>
+</div>
+</body>
+</html>

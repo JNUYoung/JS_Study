@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        // window.onresize() 调整浏览器窗口大小时，就会触发该事件
+        // 1.只要窗口大小发生变化就会触发事件 
+        // 2.经常用来完成响应式布局 window.innerWidth
+        var div = document.querySelector('div');
+        window.addEventListener('resize', function() {
+            console.log('resize');
+            console.log(window.innerWidth);
+            if (window.innerWidth <= 800) {
+                div.style.display = 'none';
+            } else div.style.display = 'block';
+        })
+    </script>
+
+</body>
+
+</html>

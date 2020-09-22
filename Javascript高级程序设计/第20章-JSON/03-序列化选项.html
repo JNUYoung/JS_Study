@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>序列化选项</title>
+</head>
+
+<body>
+    <!-- JSON.stringify()方法除了接受要序列化的js实例之外，还可以接受另外两个参数
+        一个参数是过滤器，可以是数组，也可以是函数，用来过滤掉不需要的数据
+        另一个参数是一个选项，表示是否在JSON字符串中保留缩进 -->
+    <script>
+        // 1.过滤结果
+        var book = {
+                title: "三国演义",
+                author: ["罗贯中", "aaaa"],
+                edition: 1,
+                year: 1500
+            }
+            // 第二个参数传入了一个属性名的数组，表示只会序列化数组里相同属性名的数据
+        var bookjson = JSON.stringify(book, ["title", "year"]);
+        console.log(bookjson); // {"title":"三国演义","year":1500}
+
+        // 第二个参数传入了一个函数过滤器，对于不同的键来进行不同的数据过滤，即根据传入的键来决定结果
+        var bookjson1 = JSON.stringify(book, function(key, value) {
+            switch (key) {
+                case "author":
+                    return value.join(",")
+                case "year":
+                    return 5000;
+                case "edition":
+                    return undefined;
+                default:
+                    return value;
+            }
+        });
+        console.log(bookjson1); // {"title":"三国演义","author":"罗贯中,aaaa","year":5000}
+    </script>
+</body>
+
+</html>

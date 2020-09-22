@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        var div = document.querySelector('div');
+        div.onclick = function() {
+            // 里面的属性采取驼峰命名法
+            // js写的样式属于行内样式
+            this.style.backgroundColor = 'purple';
+            this.style.width = '400px';
+
+        }
+    </script>
+</body>
+
+</html>

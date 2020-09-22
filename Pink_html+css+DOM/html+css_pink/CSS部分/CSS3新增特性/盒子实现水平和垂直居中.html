@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子实现水平和垂直居中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            position: relative;
+            width: 550px;
+            height: 550px;
+            background-color: pink;
+            /*transform: translateX(50%);*/
+            /*这里的百分之五十是元素本身x方向宽度的50%*/
+        }
+        p {
+            position: absolute;
+            top: 50%;
+            /*margin-top: -100px;*/
+            left: 50%;
+            /*margin-left: -100px;*/
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            transform:translate(-50%,-50%);
+            /*利用translate中的百分比来设置可以实现弹性的水平垂直布局*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>

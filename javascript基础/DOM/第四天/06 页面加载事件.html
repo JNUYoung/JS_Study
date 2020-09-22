@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // window.onload 是页面加载事件，当文档内容完全加载完成后就会触发该事件
+        // window.onload 传统注册事件方式只能写一次，如果有多个，则以最后一个window.onload为准
+        /*
+            window.onload = function() {
+            var btn = document.querySelector('button');
+            btn.addEventListener('click', function() {
+                alert('hello world!');
+            })
+        }
+        */
+        window.addEventListener('load', function() {
+            var btn = document.querySelector('button');
+            btn.addEventListener('click', function() {
+                alert('hello world!');
+            })
+        })
+        document.addEventListener('DOMContentLoaded', function() {
+            alert('good morning');
+        })
+    </script>
+    <button>点击</button>
+
+</body>
+
+</html>

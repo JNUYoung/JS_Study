@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行内块的巧妙运用</title>
+    <style>
+        .box {
+            text-align: center;
+        }
+        .box a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background-color: #f7f7f7;
+            border: 1px solid #cccccc;
+            text-align: center;
+            line-height: 36px;
+            text-decoration: none;
+            color: #333333;
+            font-size: 14px;
+        }
+        .box .prev,.box .next {
+            width: 80px;
+        }
+        .box .current,.box .elp {
+            background-color: #FFFFFF;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#" class="prev">&lt;&lt;上一页</a>
+        <a href="#" class="current"></a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#" class="elp">...</a>
+        <a href="#" class="next">&gt;&gt;下一页</a>
+    </div>
+</body>
+</html>

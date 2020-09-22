@@ -1,0 +1,51 @@
+/*把所有标签的内外边距清零*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*使斜体的文字不倾斜*/
+em,i {
+    font-style: normal;
+}
+/*去掉li前面的小圆点*/
+li {
+    list-style: none;
+}
+/**/
+img {
+    /*border:0;是照顾低版本浏览器*/
+    border: 0;
+    /*取消图片底部有空白缝隙的问题*/
+    vertical-align: middle;
+}
+button {
+    /*当鼠标经过button时，鼠标变为小手*/
+    cursor: pointer;
+}
+a {
+    color: #666666;
+    text-decoration: none;
+}
+a:hover {
+    color: #c81623;
+}
+button,input {
+    font-family: ;
+}
+body {
+    /*CSS3:抗锯齿性，让文字显示得更加清晰*/
+    -webkit-font-smoothing:antialiased;
+    background-color: #fff;
+    font: 12px/1.5 "Microsoft YaHei UI";
+    color: #666666;
+}
+.clearfix:after {
+    clear: both;
+    visibility: hidden;
+    display: block;
+    content: '';
+    height: 0;
+}
+.clearfix {
+    *zoom: 1;
+}

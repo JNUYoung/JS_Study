@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../../images/goodmorining.gif" alt="">
+    <div>上午好</div>
+    <script>
+        var img = document.querySelector('img');
+        var div = document.querySelector('div');
+        var date = new Date();
+        var h = date.getHours();
+        // 判断小时数
+        if (h < 12) {
+            img.src = "../../images/goodmorining.gif";
+            div.innerHTML = 'good morning';
+        } else if (h < 18) {
+            img.src = "../../images/goodafternoon.jpg";
+            div.innerHTML = 'good afternoon';
+        } else {
+            img.src = "../../images/goodnight.png";
+            div.innerHTML = 'good night';
+        }
+    </script>
+</body>
+
+</html>

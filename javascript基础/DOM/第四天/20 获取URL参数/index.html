@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    主页
+    <div></div>
+    <script>
+        var params = location.search.substr(1) // uname=andy
+        var arr = params.split('=')
+        var div = document.querySelector('div');
+        div.innerHTML = arr[1] + '欢迎你';
+    </script>
+</body>
+
+</html>

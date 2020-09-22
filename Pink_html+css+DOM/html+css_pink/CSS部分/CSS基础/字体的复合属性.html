@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字体的复合属性</title>
+    <style>
+        /*div {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 微软雅黑;
+            background-color: #ffef3a;
+        }*/
+        div {
+            font: italic 700 16px/20px 微软雅黑;
+        }
+        /*语法规范：简洁，节约代码，顺序要一致对应
+            但是必须保留font-size和font-family，这两个属性不能省略
+            font:font-style font-weight font-size/line-height font-family
+            */
+    </style>
+</head>
+<body>
+    <!--CSSs字体属性包括font-size\font-weight\font-family\font-style-->
+    <div>三生三世十里桃花，一心一意百行代码</div>
+</body>
+</html>

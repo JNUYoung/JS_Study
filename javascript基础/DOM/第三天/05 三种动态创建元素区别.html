@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>点击</button>
+    <p>abc</p>
+    <script>
+        // 1.document.write()
+        // 2.element.innerHTML
+        // 3.document.createElement()
+        window.onload = function() {
+
+        }
+        var btn = document.querySelector('button');
+        btn.onclick = function() {
+                document.write('<div>123</div>');
+            }
+            // document.write() 会导致页面全部重绘
+    </script>
+</body>
+
+</html>

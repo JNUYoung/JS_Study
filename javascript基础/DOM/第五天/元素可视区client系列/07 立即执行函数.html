@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>立即执行函数</title>
+</head>
+
+<body>
+    <script>
+        //  立即执行函数
+        //  创建了一个独立的作用域，避免了命名冲突问题
+        function fn() {
+            console.log(1);
+        }
+        fn();
+        // 立即执行函数不需要调用，立马能够自己执行
+        // 写法
+        // (function() {})()
+        // (function() {}())
+
+        (function() {
+            console.log(2);
+        })()
+    </script>
+</body>
+
+</html>

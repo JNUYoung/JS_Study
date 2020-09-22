@@ -1,0 +1,126 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 85px;
+    width: 1200px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #af191b;
+}
+header img {
+    padding: 15px 0;
+}
+.registerarea {
+    height: 522px;
+    border: 1px solid #cccccc;
+    margin-top: 20px;
+}
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.registerarea .login {
+    float: right;
+    font-size: 14px;
+}
+.registerarea .login a {
+    color: #ca6a6b;
+}
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0 ;
+}
+.reg_form label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+.reg_form .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #cccccc;
+}
+.reg_form .error {
+    color: #db2a3a;
+}
+.error_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/error.png);
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.success {
+    color: green;
+}
+.success_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/success.png);
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+.safe em {
+    padding: 0 12px;
+    color: #ffffff;
+}
+.ruo {
+    background-color: #dc120e;
+}
+.zhong {
+    background-color: #43b73a;
+}
+.qiang {
+    background-color: #f79100;
+}
+.safe {
+    padding-left: 170px;
+}
+.agree input {
+    vertical-align: middle;
+}
+.agree {
+    padding-left: 92px;
+}
+.agree a {
+    color: #1f9eef;
+}
+.reg_finished input {
+    width: 200px;
+    height: 34px;
+    background-color: #c81622;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 30px 0 0 70px;
+}
+
+.footer {
+    height: 120px;
+    background-color: #ffffff;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+.mod_copyright {
+    text-align: center;
+}
+.links {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+.copyright {
+    line-height: 20px;
+}
+.links a {
+    margin: 0 15px;
+}

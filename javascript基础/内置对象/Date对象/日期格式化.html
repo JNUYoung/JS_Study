@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var date = new Date();
+        console.log(date.getFullYear()); // 2020
+        console.log(date.getMonth()); //返回的月份会小1
+        console.log(date.getDate()); // 4 返回的是几号
+        console.log(date.getDay()); // 2 返回星期几 周日为0，周一到周六为1-6；
+        console.log(date.getHours()); // 返回当前小时
+        console.log(date.getTime()); // 返回当前时间距离1970
+
+        // 符合中国的格式
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var dates = date.getDate();
+        var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        var day = arr[date.getDay()];
+        console.log('今天是' + year + '年' + month + '月' + dates + '日' + day);
+    </script>
+</body>
+
+</html>

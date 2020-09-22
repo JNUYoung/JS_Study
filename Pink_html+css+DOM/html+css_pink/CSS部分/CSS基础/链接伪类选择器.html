@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链接伪类选择器</title>
+    <style>
+        /*1.选择未访问的链接*/
+        a:link {
+            color: #333333;
+            text-decoration: none;
+        }
+        /*2.选择已经访问过的链接*/
+        /*只要链接被点击访问过了，那么就会执行对应的样式*/
+        a:visited {
+            color: orange;
+        }
+        /*3.选择鼠标经过的链接，再执行样式*/
+        a:hover {
+            color: skyblue;
+        }
+        /*4.:active 选择鼠标按下但还没弹起的链接*/
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">小猪佩奇</a>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/*列表页专有CSS样式*/
+.dd {
+    visibility: hidden;
+}
+.nav {
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    border-left: 1px solid #b3181c;
+    padding: 3px 10px;
+}
+.sk_list {
+    float: left;
+}
+.sk_con {
+    float: left;
+}
+.sk_bd {
+    overflow: hidden;
+}
+.sk_list ul li {
+    float: left;
+    text-align: center;
+    line-height: 45px;
+}
+.sk_list ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    padding: 0 28px;
+}
+.sk_con ul li {
+    float: left;
+    text-align: center;
+    line-height: 47px;
+}
+.sk_con ul li a {
+    font-size: 14px;
+    color: #666666;
+    padding: 0 20px;
+}
+.sk_con ul li:hover a {
+    color: #b2191b;
+}
+.sk_con ul li:last-child::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    font-size: 14px;
+    margin-left: -20px;
+}
+.sk_bd ul li {
+    float: left;
+    margin-right: 10px;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+}
+.sk_bd ul li:hover {
+    border: 1px solid #de2221;
+}
+.sk_bd .pic {
+    width: 290px;
+    height: 290px;
+    line-height: 290px;
+    text-align: center;
+}
+.sk_bd .goodsInfo {
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+
+}
+.sk_bd .price {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 25px;
+}
+.sk_bd .price .now {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e10012;
+}
+.sk_bd .price .old {
+    font-size: 16px;
+    color: #cccccc;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+.saledata {
+    height: 30px;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+}
+.saledata .summary {
+    display: inline-block;
+    width: 132px;
+    height: 13px;
+    background-color: #ed2a30;
+    border-radius: 13px;
+}
+.saledata .left {
+    font-size: 14px;
+}
+.saledata .left span {
+    color: #ed2a30;
+}
+.buynow {
+    height: 50px;
+    background-color: #b2191b;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+
+}
+.buynow a {
+    color: #ffffff;
+}

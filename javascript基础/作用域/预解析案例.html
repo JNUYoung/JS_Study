@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 案例1
+        /*var num = 10;
+        fun();
+
+        function fun() {
+            // 预解析变量提升，相当于这里有 var num;
+            console.log(num); // undefined
+            var num = 20;
+        }*/
+
+        // 案例2
+        /* var num = 10;
+
+         function fn() {
+             console.log(num); // undefined
+             var num = 20;
+             console.log(num); // 20
+         }
+         fn();*/
+
+        // 案例3
+        /*var a = 18;
+        f1();
+
+        function f1() {
+            var b = 9;
+            console.log(a); // undefined
+            console.log(b); // 9
+            var a = '123';
+        }*/
+
+        // 案例4
+        f1();
+        console.log(c);
+        console.log(b);
+        console.log(a);
+
+        function f1() {
+            var a = b = c = 9; // b,c是全局变量
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+    </script>
+</body>
+
+</html>

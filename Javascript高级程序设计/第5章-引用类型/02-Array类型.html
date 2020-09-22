@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        // JS数组非常灵活，可以在一个数组中的每一位存放不同类型的数据，可以是值类型，也可以是引用类型
+        // ECMAscript的数组大小也是可以动态调整的，可以随着数据的添加自动增长，而不用手动操作
+
+        // 创建数组的两种方式
+        var arr = new Array();
+        var arr1 = new Array(20); // 长度为20的新数组
+        var arr2 = new Array("red", "blue", "green"); // 可以向Array构造函数中直接传递数组中的数据项
+        // 使用Array构造函数时，省略new关键字，结果不会改变
+
+        // 数组字面量
+        var arr3 = [1, true, "andy", {
+            age: 20,
+            address: "china"
+        }]
+        for (var i = 0; i < arr3.length; i++) {
+            console.log(arr3[i]);
+        }
+
+        // **数组的长度属性length不是只读的，可以动态的修改length属性来达到对于数组进行增删操作
+        arr2[arr2.length] = 'yellow';
+        console.log(arr2);
+
+        // 检测数组
+        // 1.instanceof
+        // 2.Array.isArray(value)这个方法可以确定某个值到底是不是数组，而不管它是在哪个执行环境下被创建的
+    </script>
+</body>
+
+</html>

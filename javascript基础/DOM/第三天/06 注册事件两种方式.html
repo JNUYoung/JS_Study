@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册事件两种方式</title>
+</head>
+
+<body>
+    <button>传统注册事件</button>
+    <button>方法监听注册事件</button>
+
+    <script>
+        var btns = document.querySelectorAll('button');
+        // 1.传统方式注册事件
+        btns[0].onclick = function() {
+            alert('hi');
+        }
+        btns[0].onclick = function() {
+                alert('hello world!');
+            }
+            // 同一个对象，添加了两个点击事件，后面的把前面的覆盖了
+            // 后面的处理事件函数会将前面的覆盖掉
+
+
+        // addEventListener() 方法监听注册事件
+        // 特点：同一个元素 同一个事件 可以注册多个监听器，即多个事件处理函数
+        // 按照注册顺序依次执行
+        // 2.事件监听注册事件,里面的事件类型是字符串并且不带on
+        btns[1].addEventListener('click', function() {
+            alert('good morning!')
+        })
+        btns[1].addEventListener('click', function() {
+            alert('nice!')
+        })
+    </script>
+</body>
+
+</html>

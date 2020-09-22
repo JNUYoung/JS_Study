@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo" index="1"></div>
+    <script>
+        // 1.获得元素的属性值
+        var div = document.querySelector('div');
+        console.log(div.id);
+        // element.getAttribute()
+        console.log(div.getAttribute('id'));
+
+        // 区别
+        // element.属性 只能获取元素的内置属性
+        // element.getAttribute() 可以获取到自定义的属性
+        console.log(div.getAttribute('index'));
+        console.log(div.index); // undefined
+
+        // 2.设置元素属性值
+        // （1）element.属性 = '值'
+        div.id = 'test';
+        div.className = 'leiming';
+        // (2) element.setAttribute('属性','值') 主要针对于自定义属性
+        div.setAttribute('id', 'testone'); // 第一个参数是要修改的属性名 第二个参数是要修改成的属性值
+
+        // 3.移除属性 removeAttribute(属性)
+        div.removeAttribute('class');
+    </script>
+</body>
+
+</html>

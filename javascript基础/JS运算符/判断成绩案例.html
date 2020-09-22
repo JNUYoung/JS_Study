@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>判断学生的成绩</title>
+</head>
+<body>
+    <script>
+        var stuScore = prompt('请输入学生的成绩');
+        if (stuScore >= 90 && stuScore <= 100) {
+            alert('A');
+        }   
+        else if (stuScore >= 80 && stuScore < 90) {
+            alert('B');
+        }
+        else if (stuScore >= 70 && stuScore < 80) {
+            alert('C');
+        }
+        else if (stuScore >= 60 && stuScore < 70) {
+            alert('D');
+        }
+        else if (stuScore >=0 && stuScore < 60){
+            alert('E');
+        }
+        else alert('输入数据有误！请重新检查！');
+    </script>
+</body>
+</html>

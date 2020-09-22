@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON的解析与序列化</title>
+</head>
+
+<body>
+    <script>
+        // stringify()--把javascript对象序列化为JSON字符串
+        // parse()--把json字符串解析为原生的javascript
+
+        var book = {
+            title: "三国演义",
+            author: "罗贯中",
+            edition: 1,
+            year: 1500,
+            sayhi: function() {
+                console.log('hello world')
+            }
+        };
+        // 将book对象通过JSON.stringify方法解析为JSON字符串，输出的的字符串不包含任何空格字符或缩进
+        var bookjson = JSON.stringify(book);
+        console.log(bookjson); // {"title":"三国演义","author":"罗贯中","edition":1,"year":1500}
+        // 将JavaScript序列化为JSON字符串时，所有的函数与原型成员都会被自动忽略
+    </script>
+</body>
+
+</html>

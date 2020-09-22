@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发送短信案例</title>
+</head>
+
+<body>
+    手机号码:<input type="tel"><button>提交</button>
+    <script>
+        // 点击按钮后，该按钮60s后不能再次点击，防止重复发送短信
+        var btn = document.querySelector('button');
+        var time = 60; // 定义剩下的秒数
+        btn.addEventListener('click', function() {
+            btn.disabled = true;
+            var timer = setInterval(function() {
+                if (time == 0) {
+                    clearInterval(timer);
+                    btn.disabled = false;
+                    btn.innerHTML = '提交';
+                    time = 60;
+                } else {
+                    btn.innerHTML = time + 's后重新发送';
+                    time--;
+                }
+            }, 1000)
+
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.利用class创建明星类
+        // 1.类里面所有的函数都不需要写function
+        // 2.多个函数或方法之间不需要逗号来分隔
+        class Star {
+            constructor(uname) {
+                this.uname = uname;
+            }
+            sing() {
+                console.log('sing')
+            }
+        }
+
+        // 2.利用类创建对象实例
+        var ldh = new Star('刘德华');
+        console.log(ldh.uname);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3-：nth-child(n)选择器</title>
+    <style>
+        /*1.选择奇数li标签*/
+        ul li:nth-child(odd) {
+            background-color: pink;
+        }
+        /*2.选择偶数li标签*/
+        ul li:nth-child(even) {
+            background-color: blue;
+        }
+        /*3.n为公式 n从零开始，且字母必须为n*/
+        ol li:nth-child(2n+1) {
+            background-color: skyblue;
+        }
+        ol li:nth-child(2n) {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>我是第1个孩子</li>
+    <li>我是第2个孩子</li>
+    <li>我是第3个孩子</li>
+    <li>我是第4个孩子</li>
+    <li>我是第5个孩子</li>
+    <li>我是第6个孩子</li>
+    <li>我是第7个孩子</li>
+    <li>我是第8个孩子</li>
+</ul>
+<ol>
+    <li>我是第1个孩子</li>
+    <li>我是第2个孩子</li>
+    <li>我是第3个孩子</li>
+    <li>我是第4个孩子</li>
+    <li>我是第5个孩子</li>
+    <li>我是第6个孩子</li>
+    <li>我是第7个孩子</li>
+    <li>我是第8个孩子</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM事件流</title>
+    <style>
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">son盒子</div>
+    </div>
+    <script>
+        // 1.捕获阶段，如果第三个参数是true，则处于捕获阶段
+        var son = document.querySelector('.son');
+        son.addEventListener('click', function() {
+            alert('son');
+        }, true)
+        var father = document.querySelector('.father');
+        father.addEventListener('click', function() {
+            alert('father');
+        }, true)
+    </script>
+</body>
+
+</html>

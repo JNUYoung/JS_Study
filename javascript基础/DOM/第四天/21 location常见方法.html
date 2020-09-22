@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>location常见方法</title>
+</head>
+
+<body>
+    <button>点击</button>
+    <script>
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function() {
+            // 记录浏览历史，页面可以后退
+            //location.assign('https://www.baidu.com');
+
+            //location.replace('https://www.baidu.com')
+            // replace不记录浏览历史，页面无法后退
+
+            location.reload();
+            // 页面重新加载，相当于刷新页面
+        })
+    </script>
+</body>
+
+</html>

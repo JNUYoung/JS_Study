@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3过渡效果</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /*transition: 变化的属性 花费的时间 运动曲线 何时开始*/
+            transition: width 1s,height 1s;
+            /*如果要多个属性的过渡，中间用逗号隔开*/
+        }
+        div:hover {
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>节点操作之子节点</title>
+</head>
+
+<body>
+    <div>我是div</div>
+    <span>我是span</span>
+    <ul>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ul>
+    <ol>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ol>
+    <div class="box">
+        <span class="erweima">x</span>
+    </div>
+    <script>
+        // DOM提供的方法
+        var ul = document.querySelector('ul');
+        var lis = ul.querySelectorAll('li');
+        // 1.子节点 parentNode.childNodes 得到所有的子节点，包括文本节点，元素节点
+        console.log(ul.childNodes);
+        // 如果要获得这么多子节点里面的元素节点，需要通过循环遍历，通过判断节点nodeType来确定，比较繁琐，所以一般不提倡使用childNode
+
+        // parentNode.children 是一个只读属性，只会返回所有子元素节点，其他类型的节点不会返回
+        console.log(ul.children); // 返回的也是一个数组型
+    </script>
+</body>
+
+
+</html>

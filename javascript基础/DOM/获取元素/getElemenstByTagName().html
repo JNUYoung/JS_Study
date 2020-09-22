@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>知否知否，应是绿肥红瘦</li>
+        <li>知否知否，应是绿肥红瘦</li>
+        <li>知否知否，应是绿肥红瘦</li>
+        <li>知否知否，应是绿肥红瘦</li>
+        <li>知否知否，应是绿肥红瘦</li>
+    </ul>
+    <ol id="ol">
+        <li>昨夜雨疏风骤，浓睡不消残酒</li>
+        <li>昨夜雨疏风骤，浓睡不消残酒</li>
+        <li>昨夜雨疏风骤，浓睡不消残酒</li>
+        <li>昨夜雨疏风骤，浓睡不消残酒</li>
+        <li>昨夜雨疏风骤，浓睡不消残酒</li>
+    </ol>
+    <script>
+        // getElementByTagName 通过标签名获取元素
+        // 返回的是获取的元素对象的集合，以伪数组的形式存储
+        var lis = document.getElementsByTagName('li');
+        console.log(lis);
+        console.log(lis[0]);
+        // 想要依次打印里面的元素对象可以采取遍历
+        for (var i = 0; i < lis.length; i++) {
+            console.log(lis[i]);
+        }
+        // 如果页面中只有一个li，返回的还是伪数组
+
+        //如果页面中没有对应的元素，返回的还是空的伪数组
+        //var ols = document.getElementsByTagName('ol');
+        //console.log(ols);
+
+        // element.getElementsByTagName()   
+        //var ol = document.getElementsByTagName('ol');
+        //console.log(ol[0].getElementsByTagName('li'));
+        var ol = document.getElementById('ol');
+        console.log(ol.getElementsByTagName('li'));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>查询水果价格案例</title>
+</head>
+<body>
+    <script>
+        //case后面跟的value要跟option的类型一模一样
+        var option = prompt('请输入您要查询的水果类型：');
+        switch(option) {
+            case 'apple':
+                alert('￥10');
+                break;
+            case 'banana':
+                alert('￥15');
+                break;
+            case 'pear':
+                alert('￥5');
+                break;
+            default:
+                alert('不好意思，卖完了！');
+        }
+    </script>
+</body>
+</html>

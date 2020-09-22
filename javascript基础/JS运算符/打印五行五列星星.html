@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = '';
+        for (var i = 0; i < 5; i++) {
+            for (var j = 0; j < 5; j++) {
+                str += '⭐';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+    </script>
+    <script>
+        var str = '';
+        var rows = prompt('请输入要打印的行数');
+        var cols = prompt('请输入要打印的列数');
+        for (var i = 0; i < rows; i++) {
+            for (var j = 0; j < cols; j++) {
+                str += '⭐';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+    </script>
+</body>
+
+</html>

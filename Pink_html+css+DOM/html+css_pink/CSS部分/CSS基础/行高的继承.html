@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>继承性-行高的继承</title>
+    <style>
+        body {
+            color: pink;
+/*
+            font: 12px/24px 微软雅黑;
+*/
+            font: 12px/1.5 "Microsoft YaHei UI";
+        }
+        /*子元素继承了body的行高1.5*/
+        /*这个1.5是当前元素文字大小的1.5倍 所以当前div的行高就是21px*/
+        div {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div>粉红色的回忆</div>
+    <p>粉红色的回忆</p>
+</body>
+</html>

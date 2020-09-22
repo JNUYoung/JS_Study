@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝轮播图制作</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+        }
+        /*规定图片大小，保证图片和盒子一样大*/
+        .tb-promo img {
+            width: 520px;
+            height: 280px;
+        }
+        .prev,.next {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0,0,0,0.3);
+            text-align: center;
+            line-height: 30px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .prev {
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .next {
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .promo-nav {
+            position: absolute;
+            bottom: 15px;
+            /*定位盒子水平居中*/
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 7px;
+        }
+        .promo-nav li {
+            float: left;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: #FFFFFF;
+            margin: 3px;
+        }
+        .promo-nav .selected {
+            background-color: #ff5000;
+        }
+    </style>
+</head>
+<body>
+    <div class="tb-promo">
+        <img src="../imags/tb-promo.jpg" alt="promo">
+        <!--左侧箭头-->
+        <a href="" class="prev">&lt;</a>
+        <!--右侧箭头-->
+        <a href="" class="next">&gt;</a>
+        <!--小圆点模块-->
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

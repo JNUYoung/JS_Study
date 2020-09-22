@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.通过修改数组长度length来实现数组扩容
+        var arr = ['red', 'green', 'blue'];
+        console.log(arr.length);
+        arr.length = 5;
+        console.log(arr.length);
+        console.log(arr);
+        console.log(arr[3]);
+
+        // 2.通过修改数组下标来实现数组扩容
+        // 追加数组元素
+        var arr1 = ['red', 'green', 'blue'];
+        arr1[3] = 'pink';
+        console.log(arr1.length);
+        console.log(arr1);
+        arr1[19] = 'purple';
+        console.log(arr1.length);
+        console.log(arr[18]);
+    </script>
+</body>
+
+</html>

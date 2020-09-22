@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 方法一 */
+        
+        .father {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+        }
+        
+        .son {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 方法2 */
+        
+        .father2 {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+        }
+        
+        .son2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transform: translate(-50%, -50%);
+        }
+        /* 方法3 */
+        
+        .father3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+        
+        .son3 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 方法4 */
+        
+        .father4 {
+            display: flex;
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+        }
+        
+        .son4 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: auto;
+        }
+        /* 
+        方法1： 父元素相对定位，子元素绝对定位，top，left设置50%，再margin自己水平垂直方向长度的一半
+
+        方法2：父元素相对定位，子元素绝对定位，top，left设置50%，再利用transform:translate(-50%,-50%)
+        这里50%是以子元素为基准
+
+        方法3：父元素设置display:flex;主轴水平居中justify-content:center; 侧轴垂直居中align-items:center;
+
+        方法4：父元素设置display:flex; 子元素设置margin:auto;
+         */
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">
+            son
+        </div>
+    </div>
+    <div class="father2">
+        <div class="son2">
+            son
+        </div>
+    </div>
+    <div class="father3">
+        <div class="son3">
+            son
+        </div>
+    </div>
+    <div class="father4">
+        <div class="son4">
+            son
+        </div>
+    </div>
+</body>
+
+</html>

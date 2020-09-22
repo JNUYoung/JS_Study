@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>节点操作-获取第一个子元素，最后一个子元素</title>
+</head>
+
+<body>
+    <ol>
+        <li>我是li1</li>
+        <li>我是li2</li>
+        <li>我是li3</li>
+        <li>我是li4</li>
+    </ol>
+    <script>
+        var ol = document.querySelector('ol');
+        // 1.parentNode.firstChild  获取的是第一个子节点，而不关注是什么类型的节点 
+        console.log(ol.firstChild);
+        // 2. parentNode.lastChild 
+        console.log(ol.lastChild);
+        // parentNode.firstElementChild 返回第一个子元素节点
+        console.log(ol.firstElementChild);
+        // parentNode.lastElementChild
+        console.log(ol.lastElementChild);
+        // parentNode.children[0]  利用children
+        // 实际开发中的写法 先用children方法返回子元素节点的伪数组，再利用数组索引进行访问
+        console.log(ol.children[0]);
+        console.log(ol.children[ol.children.length - 1]);
+    </script>
+</body>
+
+</html>

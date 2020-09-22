@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    function rand(m, n) {
+        var i = Math.random(m, n);
+        return parseInt((n - m) * i + m);
+    }
+
+    function getRandomArr(m, n, l) {
+        var resultArr = [];
+        for (var i = 0; i < l; i++) {
+            resultArr.push(rand(m, n));
+        }
+        return resultArr;
+    }
+    var a = getRandomArr(1, 99, 8);
+    alert("排序之前的数组是：" + a + "\n" + "排序之后的数组是：" + a.sort());
+</script>

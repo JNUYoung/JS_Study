@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粘性定位</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .box {
+            position: sticky;
+            /*当粘性定位的盒子距离浏览器顶部还有100px距离时，跟随滚轮滚动*/
+            top: 100px;
+            width: 500px;
+            height: 100px;
+            background-color: #cccccc;
+            margin: 400px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

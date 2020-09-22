@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* from 和 to 等价于0%和100% */
+        
+        @keyframes move {
+            /* 这里的各个百分比是对于动画总时长的划分 */
+            from {
+                transform: translate(0, 0)
+            }
+            25% {
+                transform: translate(1000px, 0)
+            }
+            50% {
+                transform: translate(1000px, 500px)
+            }
+            75% {
+                transform: translate(0, 500px)
+            }
+            to {
+                transform: translate(0, 0)
+            }
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: move;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

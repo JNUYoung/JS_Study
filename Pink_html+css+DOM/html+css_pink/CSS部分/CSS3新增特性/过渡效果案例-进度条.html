@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡案例-进度条</title>
+    <style>
+        .bar {
+            width: 150px;
+            height: 15px;
+            border: 1px solid red;
+            border-radius: 7px;
+            margin: 0 auto;
+            padding: 1px;
+        }
+        .bar_1 {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            transition: width 1s;
+        }
+        .bar:hover .bar_1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="bar">
+    <div class="bar_1"></div>
+</div>
+</body>
+</html>

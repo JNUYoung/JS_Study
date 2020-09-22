@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="time">2020-8-6</div>
+
+    <script>
+        // 因为文档从上到下加载，所以得先有标签，script写在标签的下面 
+        // getElementById();参数为Id字符串 
+        // Id是大小写敏感的字符串
+        var timer = document.getElementById('time');
+        console.log(timer); // 返回的是标签及标签里面的内容
+        console.log(typeof timer); // 返回的是Element对象
+        // console.dir() 可以打印元素对象，查看里面的属性和方法
+        console.dir(timer);
+    </script>
+</body>
+
+</html>

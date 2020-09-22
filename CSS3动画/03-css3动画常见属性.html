@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(1000px, 0);
+            }
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 动画名称 */
+            animation-name: move;
+            /* 动画持续时间 */
+            animation-duration: 1s;
+            /* 规定动画的速度曲线 */
+            animation-timing-function: ease;
+            /* 规定动画何时开始，默认是0 */
+            animation-delay: 1s;
+            /* 规定动画被播放的次数，默认是1，可以设置为infinite */
+            animation-iteration-count: infinite;
+            /* 规定动画在下一周期是否逆向播放，默认是normal，alternate逆播放 */
+            animation-direction: alternate;
+            /* 规定动画是否正在运行或暂停 */
+            animation-play-state: running;
+            /* 规定动画结束后状态，保持 forwards  回到起始backwords */
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <button id="btn1">暂停</button>
+    <button id="btn2">开始</button>
+</body>
+
+</html>
+<script>
+    var div = document.querySelector('div');
+    var btn1 = document.querySelector('#btn1');
+    var btn2 = document.querySelector('#btn2');
+    btn1.onclick = function() {
+        div.style.animationPlayState = "paused";
+    }
+    btn2.onclick = function() {
+        div.style.animationPlayState = "running";
+    }
+</script>

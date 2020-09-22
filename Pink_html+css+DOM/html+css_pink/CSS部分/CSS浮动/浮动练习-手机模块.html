@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动练习-手机模块</title>
+    <style>
+        .box {
+            width: 1226px;
+            height: 615px;
+            background-color: #f5f5f5;
+            margin: 0 auto;
+        }
+        .left {
+            float: left;
+            width: 234px;
+            height: 615px;
+            background-color: #f5f5f5;
+        }
+        .right {
+            float: left;
+            width: 992px;
+            height: 615px;
+            background-color: #f5f5f5;
+        }
+        .right>div {
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: #FFFFFF;
+            margin-left: 14px;
+            margin-bottom: 14px;
+        }
+        .left img {
+            width: 234px;
+            height: 615px;
+        }
+        .right div img {
+            width: 160px;
+            height: 160px;
+
+        }
+        .right h4 {
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .right p {
+            font-size: 12px;
+            color: #bbbbbb;
+        }
+        .right .nowprice {
+            color: #ff6f0e;
+            font-size: 14px;
+        }
+        .right .oldprice {
+            font-size: 14px;
+            text-decoration:line-through;
+        }
+        .right div h4 {
+            margin-bottom: 12px;
+        }
+        .right div p {
+            margin-bottom: 22px;
+        }
+        .right .nowprice {
+            margin-right: 10px;
+        }
+        .right>div:hover {
+            box-shadow: 5px 5px rgba(0,0,0,.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            <img src="../imags/left.jpg" alt="">
+        </div>
+        <div class="right">
+            <div align="center">
+                <img src="../imags/mi/xiaomi10%20youth%205g.jpg" alt="mi 10 youth">
+                <h4>小米10 青春版 5G</h4>
+                <p class="description">50倍潜望式变焦/轻薄5G手机</p>
+                <div class="price"><span class="nowprice">1899元起</span><span class="oldprice">2099元</span></div>
+            </div>
+            <div align="center">
+                <img src="../imags/mi/xiaomi%2010.jpg" alt="mi 10">
+                <h4>小米10</h4>
+                <p class="description">骁龙865/1亿像素相机</p>
+                <div class="price"><span class="nowprice">3799元起</span><span class="oldprice">3999元</span></div>
+            </div>
+            <div align="center">
+                <img src="../imags/mi/redmi%20k30%20pro.jpg" alt="redmi k30 pro">
+                <h4>Redmi K30 Pro</h4>
+                <p class="description">双模5G，骁龙865，弹出全面屏</p>
+                <div class="price"><span class="nowprice">2499元起</span><span class="oldprice">2999元</span></div>
+            </div>
+            <div align="center">
+                <img src="../imags/mi/redmi%20k30%20pro%20变焦版.jpg" alt="redmi k30 pro bianjiaoban">
+                <h4>Redmi K30 Pro变焦版</h4>
+                <p class="description">双模5G，骁龙865，弹出全面屏</p>
+                <div class="price"><span class="nowprice">3799元</span></div>
+            </div>
+            <div align="center">
+                <img src="../imags/mi/xiaomi%2010%20pro.jpg" alt="mi 10 pro">
+                <h4>小米10 Pro</h4>
+                <p class="description">骁龙865/50倍变焦</p>
+                <div class="price"><span class="nowprice">4999元起</span></div>
+            </div>
+            <div align="center">
+                <img src="../imags/mi/redmi%20k30.jpg" alt="redmi k30">
+                <h4>Redmi K30</h4>
+                <p class="description">120Hz流速屏，全速热爱</p>
+                <div class="price"><span class="nowprice">1399元起</span><span class="oldprice">1699元</span></div>
+            </div>
+            <div align="center">
+                <img src="../imags/mi/redmi%20k30%205g.jpg" alt="redmi k30 5g">
+                <h4>Redmi K30 5G</h4>
+                <p class="description">双模5G，120Hz流速屏</p>
+                <div class="price"><span class="nowprice">1899元起</span><span class="oldprice">2299元</span></div>
+            </div>
+            <div align="center">
+                <img src="../imags/mi/redmi%208.jpg" alt="redmi 8">
+                <h4>Redmi 8</h4>
+                <p class="description">5000mAh超长续航</p>
+                <div class="price"><span class="nowprice">799元起</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

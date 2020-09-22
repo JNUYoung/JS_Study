@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scale</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 100px 0;
+            background-color: pink;
+            transform-origin: left top;
+            transition: all 2s;
+        }
+        div:hover {
+            /*scale里面的数字不用单位，表示倍数的意思*/
+            transform: scale(2,2);
+            /*scale不会影响其他的盒子，并且可以设置缩放的中心点*/
+        }
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: #ff0000;
+        }
+        h3 {
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+
+            overflow: hidden;
+        }
+        h3 img {
+            transition: all 0.5s;
+        }
+        h3 img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p></p>
+    <h3>
+        <img src="../imags/tb-promo.jpg" alt="">
+    </h3>
+</body>
+</html>

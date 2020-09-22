@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>节点操作之父节点</title>
+    <style>
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        .erweima {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>我是div</div>
+    <span>我是span</span>
+    <ul>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ul>
+    <div class="box">
+        <span class="erweima">x</span>
+    </div>
+    <script>
+        // 1。父节点 node.parentNode
+        var erweima = document.querySelector('.erweima');
+        //var box = document.querySelector('.box');
+        console.log(erweima.parentNode); // 得到二维码节点的父节点，得到的是最近的父节点 如果找不到父节点就返回为空
+        var box = erweima.parentNode;
+        erweima.onclick = function() {
+            box.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

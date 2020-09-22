@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>offsetLeft offsetRight</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .father {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px;
+        }
+        
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin-left: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+    <script>
+        // 可以动态获取相应元素的位置（偏移），大小
+        // 1.获得元素距离带有定位父元素的高度
+        // 2.获得元素自身的宽度高度
+        // 注意：返回的数值不带单位
+        var father = document.querySelector('.father');
+        console.log(father.offsetTop); // 该元素距离有定位父元素的顶部的距离
+        console.log(father.offsetLeft);
+
+        // 如果没有父亲，或者父亲没有定位，就以body为准
+        var son = document.querySelector('.son')
+        console.log(son.offsetLeft);
+    </script>
+</body>
+
+</html>

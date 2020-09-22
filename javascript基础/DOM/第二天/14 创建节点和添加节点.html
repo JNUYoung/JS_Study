@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>创建节点和添加节点</title>
+</head>
+
+<body>
+    <ul>
+        <li>123</li>
+    </ul>
+    <script>
+        // document.createElement
+        var li = document.createElement('li');
+        // node.appendChild(child)
+        var ul = document.querySelector('ul');
+        ul.appendChild(li);
+
+        // node.insertBefore(child,指定元素)
+        var lili = document.createElement('li');
+        ul.insertBefore(lili, ul.children[0]);
+    </script>
+</body>
+
+</html>

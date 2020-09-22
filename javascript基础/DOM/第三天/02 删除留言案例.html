@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>删除留言案例</title>
+    <style>
+        ul li {
+            width: 300px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            background-color: pink;
+        }
+        
+        ul li a {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>发布</button>
+    <ul>
+
+    </ul>
+    <script>
+        // 1.获取元素
+        var btn = document.querySelector('button');
+        var text = document.querySelector('textarea');
+        var ul = document.querySelector('ul');
+        btn.onclick = function() {
+            if (text.value == '') {
+                alert('你没有输入内容哦！');
+                return false;
+            } else {
+                // 1.创建元素
+                var li = document.createElement('li');
+                li.innerHTML = text.value + "<a href='javascript:;'>删除</a>";
+                // href=javascript:;组织链接跳转
+                // 2.添加元素
+                ul.insertBefore(li, ul.children[0]);
+                text.value = '';
+                // 3.删除元素，删除的是链接的父亲元素
+                var as = document.querySelectorAll('a');
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function() {
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+
+            }
+        }
+    </script>
+</body>
+
+</html>
